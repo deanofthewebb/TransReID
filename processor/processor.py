@@ -137,7 +137,7 @@ def do_inference(cfg,
                  model,
                  val_loader,
                  num_query):
-    device = "cuda"
+    device = "cuda:0"
     logger = logging.getLogger("transreid.test")
     logger.info("Enter inferencing")
 
